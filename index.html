@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fyle Tax Calculator</title>
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/style.css" />
     <script defer src="/script.js"></script>
   </head>
   <body>
@@ -12,37 +12,109 @@
       <div class="inputField" id="grossIncome">
         <div class="inputFieldHead">
           Enter gross annual income
-          <div id="grossIncomeInfo"></div>
+          <div id="grossIncomeInfo">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m11.25 11.25.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9-3.75h.008v.008H12V8.25Z"
+              />
+            </svg>
+          </div>
         </div>
         <input type="number" placeholder="Enter gross annual income" />
       </div>
       <div class="inputField" id="extraIncome">
         <div class="inputFieldHead">
           Enter extra Income
-          <div id="extraIncomeInfo"></div>
+          <div id="extraIncomeInfo"><svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m11.25 11.25.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9-3.75h.008v.008H12V8.25Z"
+              />
+            </svg></div>
         </div>
         <input type="number" placeholder="Enter extra income" />
       </div>
       <div class="inputField" id="ageGroup">
         <div class="inputFieldHead">
           Enter Age Group
-          <div id="ageGroupInfo"></div>
+          <div id="ageGroupInfo"><svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m11.25 11.25.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9-3.75h.008v.008H12V8.25Z"
+              />
+            </svg></div>
         </div>
-        <input
-          type="text"
-          class="dropdown-select"
-          placeholder="Select an option"
-        />
+        <div class="dropdownField">
+          <input
+            type="text"
+            class="dropdown-select"
+            placeholder="Select an option"
+          />
+          <div class="dropdown-select-btn">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m19.5 8.25-7.5 7.5-7.5-7.5"
+              />
+            </svg>
+          </div>
+        </div>
         <div class="dropdown-menu">
-          <div class="dropdown-menu-item">Option 1</div>
-          <div class="dropdown-menu-item">Option 2</div>
-          <div class="dropdown-menu-item">Option 3</div>
+          <div class="dropdown-menu-item" id="ageOption1">Option 1</div>
+          <div class="dropdown-menu-item" id="ageOption2">Option 2</div>
+          <div class="dropdown-menu-item" id="ageOption3">Option 3</div>
         </div>
       </div>
       <div class="inputField" id="deductions">
         <div class="inputFieldHead">
           Enter total applicable deductions
-          <div id="deductionsInfo"></div>
+          <div id="deductionsInfo"><svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m11.25 11.25.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9-3.75h.008v.008H12V8.25Z"
+              />
+            </svg></div>
         </div>
         <input type="number" placeholder="Enter total applicable deductions" />
       </div>

@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.dropdown-menu{
+    display: none;
+}
+.inputFieldHead{
+    display: flex;
+    align-items: center;
+}
+#grossIncomeInfo,#extraIncomeInfo,#ageGroupInfo,#deductionsInfo{
+    width: 20px;
+}
+.dropdownField{
+    display: flex;
+}
+.dropdown-select-btn{
+    width: 20px;
+}
