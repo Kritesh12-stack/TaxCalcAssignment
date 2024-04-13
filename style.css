@@ -4,6 +4,7 @@
 }
 body{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -14,15 +15,58 @@ body{
     display: none;
 }
 .inputFieldHead{
+    width: 100%;
     display: flex;
+    gap: 3px;
     align-items: center;
+    font-weight: 600;
 }
 #grossIncomeInfo,#extraIncomeInfo,#ageGroupInfo,#deductionsInfo{
-    width: 20px;
+    width: 15px;
 }
 .dropdownField{
     display: flex;
+    align-items: center;
+    border-radius: 8px;
 }
 .dropdown-select-btn{
-    width: 20px;
+    width: 15px;
+}
+form{
+    border: 2px;
+    border-color: rgb(218, 218, 218);
+    border-style: solid; 
+    box-shadow: 2px 2px 5px gray;
+    width: 60%;
+    padding-left: 20px;
+    padding-right:20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-radius: 8px;
+    height: 60vh;
+}
+input{
+    width: 94%;
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid;
+}
+.thirdInput{
+    border: none;
+}
+.dropdownField{
+    border: 1px solid;
+    width: 100%;
+}
+.submitBtn{
+    color: white;
+    background: blueviolet;
+    border: none;
+    font-size: larger;
+    padding: 8px;
+    border-radius: 8px;
+}
+.grossIncomeError,.extraIncomeError,.ageGroupError,.deductionsError{
+    display: none;
 }

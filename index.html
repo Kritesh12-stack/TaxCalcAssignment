@@ -31,6 +31,8 @@
         </div>
         <input type="number" placeholder="Enter gross annual income" />
       </div>
+      <div class="grossIncomeError"></div>
+
       <div class="inputField" id="extraIncome">
         <div class="inputFieldHead">
           Enter extra Income
@@ -51,6 +53,8 @@
         </div>
         <input type="number" placeholder="Enter extra income" />
       </div>
+      <div class="extraIncomeError"></div>
+
       <div class="inputField" id="ageGroup">
         <div class="inputFieldHead">
           Enter Age Group
@@ -72,8 +76,9 @@
         <div class="dropdownField">
           <input
             type="text"
-            class="dropdown-select"
+            class="dropdown-select thirdInput"
             placeholder="Select an option"
+            disabled
           />
           <div class="dropdown-select-btn">
             <svg
@@ -98,6 +103,8 @@
           <div class="dropdown-menu-item" id="ageOption3">Option 3</div>
         </div>
       </div>
+      <div class="ageGroupError"></div>
+
       <div class="inputField" id="deductions">
         <div class="inputFieldHead">
           Enter total applicable deductions
@@ -118,6 +125,11 @@
         </div>
         <input type="number" placeholder="Enter total applicable deductions" />
       </div>
+      <div class="deductionsError"></div>
+
+      <button class="submitBtn" type="submit">
+        Submit
+      </button>
     </form>
   </body>
 </html>
