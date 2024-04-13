@@ -1,11 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fyle Tax Calculator</title>
-    <script defer src="/script.js" ></script>
-</head>
-<body>
-</body>
+    <script defer src="/script.js"></script>
+  </head>
+  <body>
+    <form action="">
+      <div class="inputField" id="grossIncome">
+        <div class="inputFieldHead">
+          Enter gross annual income
+          <div id="grossIncomeInfo"></div>
+        </div>
+        <input type="number" placeholder="Enter gross annual income" />
+      </div>
+      <div class="inputField" id="extraIncome">
+        <div class="inputFieldHead">
+          Enter extra Income
+          <div id="extraIncomeInfo"></div>
+        </div>
+        <input type="number" placeholder="Enter extra income" />
+      </div>
+      <div class="inputField" id="ageGroup">
+        <div class="inputFieldHead">
+          Enter Age Group
+          <div id="ageGroupInfo"></div>
+        </div>
+        <input
+          type="text"
+          class="dropdown-select"
+          placeholder="Select an option"
+        />
+        <div class="dropdown-menu">
+          <div class="dropdown-menu-item">Option 1</div>
+          <div class="dropdown-menu-item">Option 2</div>
+          <div class="dropdown-menu-item">Option 3</div>
+        </div>
+      </div>
+      <div class="inputField" id="deductions">
+        <div class="inputFieldHead">
+          Enter total applicable deductions
+          <div id="deductionsInfo"></div>
+        </div>
+        <input type="number" placeholder="Enter total applicable deductions" />
+      </div>
+    </form>
+  </body>
 </html>
