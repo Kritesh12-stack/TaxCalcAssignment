@@ -9,7 +9,7 @@
   </head>
   <body>
     <form action="">
-      <div class="inputField" id="grossIncome">
+      <div class="inputField">
         <div class="inputFieldHead">
           Enter gross annual income
           <div id="grossIncomeInfo">
@@ -29,11 +29,12 @@
             </svg>
           </div>
         </div>
-        <input type="number" placeholder="Enter gross annual income" />
-      </div>
+        <input type="number" id="grossIncome" placeholder="Enter gross annual income" />
       <div class="grossIncomeError"></div>
+        
+    </div>
 
-      <div class="inputField" id="extraIncome">
+      <div class="inputField" >
         <div class="inputFieldHead">
           Enter extra Income
           <div id="extraIncomeInfo"><svg
@@ -51,11 +52,12 @@
               />
             </svg></div>
         </div>
-        <input type="number" placeholder="Enter extra income" />
-      </div>
+        <input type="number" id="extraIncome" placeholder="Enter extra income" />
       <div class="extraIncomeError"></div>
+        
+    </div>
 
-      <div class="inputField" id="ageGroup">
+      <div class="inputField" >
         <div class="inputFieldHead">
           Enter Age Group
           <div id="ageGroupInfo"><svg
@@ -76,6 +78,7 @@
         <div class="dropdownField">
           <input
             type="text"
+            id="ageGroup"
             class="dropdown-select thirdInput"
             placeholder="Select an option"
             disabled
@@ -98,14 +101,15 @@
           </div>
         </div>
         <div class="dropdown-menu">
-          <div class="dropdown-menu-item" id="ageOption1">Option 1</div>
-          <div class="dropdown-menu-item" id="ageOption2">Option 2</div>
-          <div class="dropdown-menu-item" id="ageOption3">Option 3</div>
+          <div class="dropdown-menu-item" id="ageOption1">&lt; 40</div>
+          <div class="dropdown-menu-item" id="ageOption2">≥ 40 & &lt; 60</div>
+          <div class="dropdown-menu-item" id="ageOption3">≥ 60</div>
         </div>
-      </div>
       <div class="ageGroupError"></div>
 
-      <div class="inputField" id="deductions">
+      </div>
+
+      <div class="inputField" >
         <div class="inputFieldHead">
           Enter total applicable deductions
           <div id="deductionsInfo"><svg
@@ -123,9 +127,9 @@
               />
             </svg></div>
         </div>
-        <input type="number" placeholder="Enter total applicable deductions" />
-      </div>
+        <input type="number" id="deductions" placeholder="Enter total applicable deductions" />
       <div class="deductionsError"></div>
+      </div>
 
       <button class="submitBtn" type="submit">
         Submit
